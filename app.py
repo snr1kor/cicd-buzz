@@ -14,5 +14,12 @@ def generate_buzz():
     page += '</h1></body></html>'
     return page
 
+@app.route("/test")
+def generate_buzz():
+    page = '<html><body><h1>Test branch</h1><br><h1>'
+    page += generator.generate_buzz()
+    page += '</h1></body></html>'
+    return page
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=os.getenv('PORT')) # port 5000 is the default
