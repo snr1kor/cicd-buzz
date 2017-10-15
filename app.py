@@ -15,7 +15,7 @@ def generate_buzz():
     return page
 
 @app.route("/test")
-def generate_buzz():
+def test():
     page = '<html><body><h1>Test branch</h1><br><h1>'
     page += generator.generate_buzz()
     page += '</h1></body></html>'
